@@ -1,0 +1,16 @@
+/* table,
+td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+tr > td:nth-child(even) {
+  width: 200px;
+} */
+
+td {
+  border: 1px solid #000;
+}
+
+table {
+  text-align: center;
+}
