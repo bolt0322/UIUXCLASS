@@ -1,0 +1,21 @@
+div {
+  width: 500px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 0 auto;
+  /* background: linear-gradient(
+    top bottom,
+    #f85032 1%,
+    #f16f5c 50%,
+    #f6290c 1%,
+    #e73827 100%
+  ); */
+  background: linear-gradient(
+    to bottom,
+    #efc5ca 0%,
+    #d24b5a 50%,
+    #ba2737 51%,
+    #f18e99 100%
+  );
+}
