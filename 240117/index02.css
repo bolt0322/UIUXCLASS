@@ -1,0 +1,41 @@
+@import url("./reset.css");
+
+header {
+  border: 1px solid #000;
+  width: 1000px;
+  height: 120px;
+  margin: 10px auto;
+  /* position: relative; */
+}
+#top_login {
+  text-align: right;
+}
+/* #login {
+  position: absolute;
+  right: 0;
+  top: 0;
+} */
+/* #logo {
+  font-size: 40px;
+  position: absolute;
+  left: 500px;
+  bottom: 10px;
+} */
+#login {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 25px;
+  border: none;
+  border-radius: 5px;
+}
+#logo {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* content */
+#content {
+  width: 500px;
+  margin: 0 auto;
+}
