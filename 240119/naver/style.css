@@ -1,0 +1,147 @@
+@import url("./reset.css");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-family: Baemin;
+}
+#wrap {
+  width: 1300px;
+  height: 100vh;
+}
+
+/* header */
+header {
+  width: 100%;
+  height: 270px;
+  /* border: 1px solid #0f0; */
+}
+/* nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+nav span {
+  font-size: 27px;
+  padding: 5px;
+}
+nav > div > span > i {
+  color: #000;
+}
+
+/* search */
+#search {
+  text-align: center;
+}
+#search_content {
+  display: inline-block;
+  border: 1px solid #03c75a;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+#search > form {
+  display: inline;
+  align-items: center;
+}
+#search_content > form > span > i {
+  color: #03c75a;
+  font-size: 27px;
+  font-weight: bold;
+}
+#search_content > form > input {
+  border: none;
+  padding: 10px 170px;
+}
+
+/* icons */
+#icons {
+  justify-content: center;
+  padding: ;
+}
+#icons > ol {
+  display: inline-block;
+}
+#icons > ol > ul {
+  padding: 2px;
+  text-align: center;
+  float: left;
+}
+#icons li:first-child {
+  padding: 8px;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  margin-left: 8px;
+  box-shadow: 0 0 1px #000;
+}
+#icons li > i {
+  font-size: 28px;
+  color: #03c75a;
+}
+
+/* contents */
+#contents_wrap {
+  display: flex;
+  height: 100%;
+  /* border: 1px solid #000; */
+}
+.first {
+  float: left;
+  margin-right: 25px;
+  border: 1px solid #f00;
+}
+.second {
+  float: left;
+  width: 800px;
+  /* border: 1px solid #0f0; */
+}
+#img_1 {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* second article */
+#first_1 {
+  border: 1px solid #000;
+  margin-top: 12px;
+  height: 500px;
+}
+#first_1 > div > span {
+  justify-content: space-between;
+}
+.click {
+  color: #838383;
+}
+#first_1 div > span:nth-child(2) > img {
+  width: 200px;
+}
+
+#second_1 {
+  text-align: center;
+  border: 1px solid #e3e5e8;
+  border-radius: 10px;
+  height: 160px;
+}
+#second_1 > div:nth-child(1) {
+  margin: 15px 0;
+  font-size: 15px;
+}
+
+#second_1 > div:nth-child(2) {
+  background: #03c75a;
+  border-radius: 6px;
+  margin: 0 14px;
+  padding: 17px 0;
+  color: #fff;
+  font-size: 17px;
+}
+#second_1 > div:nth-child(2) > :nth-child(1) {
+  font-weight: bold;
+}
+#second_1 > div:nth-child(3) {
+  margin: 15px 0;
+  font-size: 15px;
+}
