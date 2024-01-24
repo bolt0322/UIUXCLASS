@@ -1,5 +1,4 @@
 <2024-01-24>
-
 CSS3 심화내용!!
 -정적인 형식의 CSS 문법
 (레이아웃 정렬/선택자/스타일적용)
@@ -41,3 +40,19 @@ css @의 쓰임
  -@import
  -@font-face
  -@keyframes
+
+CSS 문법 거의 끝!
+
+react.js -> next.js
+
+JS / Google Chrome V8 검색엔지 / WEB
+=> Node => Runtime
+=> npm
+
+
+<배포하기>
+firebase 프로젝트 만들기 => 프로젝트 명 입력 =>  public이라는 파일 생성되면 안에 404.html과 ~.json파일 삭제 후 index.html, style.css, reset.css, font.css, script.js와 font, img파일을 ctrl+c 한 후 public파일에 ctrl+v => Configure as a single-page app? No => Set up automatic builds and deploys with GitHub? No 
+수정할 사항이 있는 경우 : 코드 수정 후 firebase deploy
+<오류 발생하는 경우>
+*메인 페이지는 무조건 index.html 이어야 함 (*하나는 온전히 index.html)
+*재배포하는 경우 : 쿠키값 삭제해야함 => 좌측 상단의 버튼
