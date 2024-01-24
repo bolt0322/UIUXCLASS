@@ -1,0 +1,31 @@
+body {
+  position: relative;
+}
+#box {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 150px;
+  background: linear-gradient(pink 20%, mistyrose 100%);
+
+  animation-name: rint;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite; /*새로고침 하지 않아도 계속해서 실행*/
+  animation-direction: alternate; /*애니메이션이 왼->오, 오->왼으로 계속 실행*/
+}
+@keyframes rint {
+  0% {
+    left: 0;
+    transform: rotate(0deg);
+  }
+  50% {
+    left: 500px;
+  }
+  100% {
+    left: 500px;
+    transform: rotate(180deg);
+  }
+}
