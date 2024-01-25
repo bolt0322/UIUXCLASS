@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+}
+.content {
+  height: 100vh;
+  display: flex;
+}
+nav {
+  background: #dad8d8;
+  flex: 1;
+}
+.section {
+  background: pink;
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+}
+.middle {
+  display: flex;
+}
+article {
+  background: pink;
+  flex: 3;
+}
+aside {
+  background: tan;
+  flex: 1;
+}
+header {
+  color: #fff;
+  background: mediumturquoise;
+  flex: 1;
+}
+.middle {
+  flex: 4;
+}
+footer {
+  color: #fff;
+  background: #000;
+  flex: 1;
+}

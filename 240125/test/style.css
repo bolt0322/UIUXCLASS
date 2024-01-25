@@ -1,0 +1,35 @@
+body {
+  margin: 0 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: yellowgreen;
+  text-align: center;
+  color: #fff;
+  flex: 1;
+}
+section {
+  display: flex;
+  flex: 2;
+}
+article {
+  background: #e0dfdf;
+  flex: 2;
+}
+aside {
+  background: gray;
+  flex: 1;
+}
+nav {
+  background: #434343;
+  flex: 1;
+}
+footer {
+  text-align: center;
+  color: #fff;
+  background: #000;
+  flex: 1;
+}

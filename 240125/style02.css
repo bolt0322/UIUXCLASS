@@ -1,0 +1,18 @@
+@import url("./reset.css");
+
+.parent {
+  border: 5px solid green;
+  height: 400px;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+}
+
+.parent div {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  background: crimson;
+  color: #fff;
+  text-align: center;
+}

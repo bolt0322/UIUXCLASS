@@ -1,0 +1,24 @@
+@import url("./reset.css");
+
+.parent {
+  border: 5px solid green;
+  display: flex;
+  flex-flow: row wrap;
+}
+.parent div {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  background: crimson;
+  color: #fff;
+  text-align: center;
+}
+/* .child1 {
+  background: crimson;
+}
+.child2 {
+  background: dodgerblue;
+}
+.child3 {
+  background: yellowgreen;
+} */
