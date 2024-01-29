@@ -368,6 +368,7 @@ span.next_btn {
   .popular_post_section {
     width: 41.6%;
     padding: 5.208%;
+    background: hsl(20, 29%, 53%);
   }
 
   /* gallery */
