@@ -1,0 +1,14 @@
+.parent {
+  border: 5px solid #000;
+  background: khaki;
+  grid-template-columns: auto auto auto;
+}
+.parent div {
+  border: 1px solid rosybrown;
+  font-size: 30px;
+  text-align: center;
+}
+.focus {
+  background: royalblue;
+  color: #fff;
+}

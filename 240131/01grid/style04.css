@@ -1,0 +1,16 @@
+.parent {
+  border: 5px solid #000;
+  background: rgb(221, 150, 35);
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 10px;
+}
+.parent div {
+  border: 1px solid #fff;
+  text-align: center;
+  font-size: 30px;
+}
+.item {
+  background: plum;
+  grid-area: 2/1 / span 2 / span 3;
+}
