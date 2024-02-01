@@ -1,0 +1,45 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body .figma {
+  width: 160px;
+  height: 350px;
+}
+body .figma h1 {
+  display: block;
+  text-align: center;
+}
+body .figma .content {
+  padding: 0%;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+body .figma .content .circle {
+  width: 80px;
+  height: 80px;
+}
+body .figma .content .circle.one {
+  border-radius: 100% 0 0 100%;
+  background: #f00;
+}
+body .figma .content .circle.two {
+  border-radius: 0 100% 100% 0;
+  background: #fc4343;
+}
+body .figma .content .circle.three {
+  border-radius: 100% 0 0 100%;
+  background: #8104cf;
+}
+body .figma .content .circle.four {
+  border-radius: 100%;
+  background: #6969f6;
+}
+body .figma .content .circle.five {
+  border-radius: 100% 0 100% 100%;
+  background: green;
+}/*# sourceMappingURL=style01.css.map */
