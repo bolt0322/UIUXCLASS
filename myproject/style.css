@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* Variables*/
+@import url("./reset.css");
+@font-face {
+  font-family: "Rebecca";
+  src: url("./font/EF_Rebecca.ttf");
+}
+@font-face {
+  font-family: "NanumL";
+  src: url("./font/NanumSquareL.ttf");
+}
+@font-face {
+  font-family: "NanumR";
+  src: url("./font/NanumSquareR.ttf");
+}
+/* common */
+.wrap {
+  width: 100%;
+  height: 100vh; /*일단 이렇게*/
+  background: #f5f2ef;
+}
+
+/* header */
+.header {
+  width: 100%;
+  height: 90px;
+  background: #f5f2ef;
+  border-bottom: 1px solid #323232;
+}
+.header .header_inner {
+  font: bold 15px/1 "NanumL";
+  color: #323232;
+  width: 86%;
+  height: inherit;
+  margin: 0 auto;
+  position: relative;
+}
+.header .header_inner .header_contents {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header .header_inner .header_contents i {
+  font-size: 30px;
+}
+.header .header_inner .header_contents span {
+  font: normal 30px/1 "Rebecca";
+  margin-left: 10px;
+}
+.header .header_inner .nav_left {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+.header .header_inner .nav_right {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+.header .header_inner .nav_right li {
+  float: left;
+  margin-left: 50px;
+}
+.header .header_inner .nav_right li:first-child {
+  margin-left: 0;
+}/*# sourceMappingURL=style.css.map */
