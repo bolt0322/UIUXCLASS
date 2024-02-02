@@ -5,9 +5,10 @@ $color: (
   main-black: #323232,
   main-khaki: #aeb5b4,
 );
-$font: (
+$font-size: (
   head-small: 15px,
   head-large: 30px,
+  page-top: 50px,
 );
 
 @import url("./reset.css");
@@ -27,12 +28,14 @@ $font: (
 /* common */
 .wrap {
   width: 100%;
-  height: 100vh; /*일단 이렇게*/
-  background: #f5f2ef;
+  height: 8000px;
 }
 
 /* header */
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 500;
   width: 100%;
   height: 90px;
   background: map-get($color, main-cream);
@@ -50,7 +53,7 @@ $font: (
       left: 50%;
       transform: translate(-50%, -50%);
       i {
-        font-size: map-get($font, head-large);
+        font-size: map-get($font-size, head-large);
       }
       span {
         font: normal 30px/1 "Rebecca";
@@ -76,6 +79,51 @@ $font: (
           margin-left: 0;
         }
       }
+    }
+  }
+}
+
+/* page-content */
+.page-content {
+  width: inherit;
+  height: inherit;
+}
+
+/* section-main */
+.section-main {
+  padding-top: 100px;
+  width: 100%;
+  height: 100vh;
+  background: map-get($color, main-pink);
+  .main-container {
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    .main-banner {
+      display: inline-block;
+      text-align: center;
+      font: normal 270px/1 "Rebecca";
+      color: map-get($color, main-black);
+    }
+    .main-text {
+      display: inline-block;
+      font: bold 30px/1.5 "NanumL";
+      color: map-get($color, main-black);
+      margin-top: 20px;
+      padding-left: 100px;
+    }
+  }
+}
+
+/* section-introduce */
+.section-introduce {
+  width: 100%;
+  height: 100vh;
+  background: map-get($color, main-khaki);
+  .introduce-top {
+    p {
+      font: normal 50px/1 "Rebecca";
     }
   }
 }

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Variables*/
 @import url("./reset.css");
 @font-face {
@@ -16,12 +15,14 @@
 /* common */
 .wrap {
   width: 100%;
-  height: 100vh; /*일단 이렇게*/
-  background: #f5f2ef;
+  height: 8000px;
 }
 
 /* header */
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 500;
   width: 100%;
   height: 90px;
   background: #f5f2ef;
@@ -67,4 +68,46 @@
 }
 .header .header_inner .nav_right li:first-child {
   margin-left: 0;
+}
+
+/* page-content */
+.page-content {
+  width: inherit;
+  height: inherit;
+}
+
+/* section-main */
+.section-main {
+  padding-top: 100px;
+  width: 100%;
+  height: 100vh;
+  background: #deccc8;
+}
+.section-main .main-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.section-main .main-container .main-banner {
+  display: inline-block;
+  text-align: center;
+  font: normal 270px/1 "Rebecca";
+  color: #323232;
+}
+.section-main .main-container .main-text {
+  display: inline-block;
+  font: bold 30px/1.5 "NanumL";
+  color: #323232;
+  margin-top: 20px;
+  padding-left: 100px;
+}
+
+/* section-introduce */
+.section-introduce {
+  width: 100%;
+  height: 100vh;
+  background: #aeb5b4;
+}
+.section-introduce .introduce-top p {
+  font: normal 50px/1 "Rebecca";
 }/*# sourceMappingURL=style.css.map */
