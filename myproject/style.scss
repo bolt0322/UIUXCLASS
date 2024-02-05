@@ -109,6 +109,7 @@ $font-size: (
     .main-text {
       display: inline-block;
       font: bold 30px/1.5 "NanumL";
+      text-transform: uppercase;
       color: map-get($color, main-black);
       margin-top: 20px;
       padding-left: 100px;
@@ -117,13 +118,81 @@ $font-size: (
 }
 
 /* section-introduce */
+// .section-introduce {
+//   width: 100%;
+//   height: 100vh;
+//   padding: 100px 0;
+//   background: map-get($color, main-khaki);
+//   .introduce-top {
+//     text-align: center;
+//     span {
+//       font: normal 100px/1 "Rebecca";
+//       color: map-get($color, main-black);
+//       text-transform: uppercase;
+//     }
+//   }
+//   .pic-list {
+//     border: 1px solid #000;
+//     ul {
+//       li {
+//         width: 255px;
+//         height: 430px;
+//         float: left;
+//         margin: 0 20px;
+//         img {
+//           width: 100%;
+//           height: 100%;
+//           object-fit: cover;
+//           border-radius: 130px;
+//           filter: grayscale(0.8);
+//         }
+//       }
+//     }
+//   }
+// }
+
 .section-introduce {
   width: 100%;
   height: 100vh;
+  padding: 100px 0;
   background: map-get($color, main-khaki);
   .introduce-top {
-    p {
-      font: normal 50px/1 "Rebecca";
+    text-align: center;
+    span {
+      font: normal 100px/1 "Rebecca";
+      color: map-get($color, main-black);
+      text-transform: uppercase;
+    }
+  }
+  .pic-list {
+    margin-top: 80px;
+    ul {
+      float: left;
+      overflow: hidden;
+      border: 1px solid #000;
+      li {
+        width: 100%;
+        display: flex;
+        width: calc(100vw * (240 / 1919));
+        height: calc(100vw * (428 / 1919));
+        border-radius: calc(100vw * (240 / 1919));
+        margin: 0 calc(100vw * (20 / 1919));
+        position: relative;
+        overflow: hidden;
+        float: left;
+        &:nth-child(odd) {
+          margin-top: 52px;
+        }
+        &:first-child {
+          margin-left: 0;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          filter: grayscale(1);
+        }
+      }
     }
   }
 }
