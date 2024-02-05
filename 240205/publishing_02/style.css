@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.coding {
+  width: 1000px;
+  height: 100vh;
+  padding-top: 50px;
+}
+.coding h1 {
+  text-align: center;
+}
+.coding h1 span {
+  color: crimson;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+  padding: 7px 0;
+  background: #eee;
+}
+.navigation span::after {
+  content: "|";
+}
