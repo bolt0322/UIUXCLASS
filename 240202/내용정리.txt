@@ -1,0 +1,48 @@
+index.html  >  figma 로고
+index01.html  >  버튼 6개 클릭  *
+index02.html  >  포트폴리오 팝업 *
+project_4  >  포트폴리오 양식 *
+project_5  >  아이폰 목업
+
+
+<2024-02-02>
+googleicons
+
+label - input 은 형제 요소일 때만 for와 id가 필요함. 
+
+html5
+  **inline vs block / position / flex & grid / 선택자
+css3
+  **선택자
+scss
+  **변수 / 템플릿=mixin & include / nesting / if
+JS
+  
+쉽고, 편리하게 사용할 수 있는 것 없을까?
+  => 원래는 직접 JS html 요소를 찾아와서 코드를 짜야하는데, 이미 이 기능을 구현할 수 있도록 만들어놓은 요소를 가져다가 빌려 쓰고자 함
+  => 도서관 = 라이브러리
+  => JS 라이브러리 > 2015년까지는 jQuery가 압도적 / 2014년 마크 주커버그가 React 만듦.
+  => jQuery는 거의 안씀. 실무에서 x. 하지만 알아야 함.  => plug-in
+
+cdn = content delivery network
+1.공홈에서 링크 주소 복사
+2.공홈에서 클릭 => 루트 파일에 다운
+3.cdn에서 주소 복사
+
+  + jQuery 먼저 쓴 다음에 외부 플러그인을 써야함
+
+jQuery : 취업할 때 포트폴리오에 남발 xx
+ > JS : 코드 입력해서 UI => 하드코딩
+ > jQuery : 외부 플러그인 활용해서 UI => 소프트코딩 / 가코딩
+
+
+<명절 전까지>
+ *bootstrap  =>  실전예제 많이 남음 30개! 웹퍼블리셔라면 무조건 알아야 함!! (*제이쿼리, scss 많이 나옴)
+ *Figma + html & css + jquery
+
+JS15 > TS10 > React20
+
+ 언제 flex or grid??
+  => 프로젝트의 규모 클수록 grid! 작을수록 flex!
+  => 사전에 pre-production: wire-frame + mockup 등등 인력 / grid의 사전 준비 없으면 x / 사전 준비가 잘되어있을 수록 grid 매우 유리!!
+  => 규모 작고 시간이 촉박할수록 flex로 빨리빨리 쳐냄
