@@ -114,16 +114,16 @@
   text-align: center;
 }
 .section-introduce .introduce-top span {
-  font: normal 100px/1 "Rebecca";
+  font: normal 6.5em/1 "Rebecca";
   color: #323232;
   text-transform: uppercase;
 }
 .section-introduce .pic-list {
   margin-top: 80px;
+  overflow: hidden;
 }
 .section-introduce .pic-list ul {
   float: left;
-  overflow: hidden;
   border: 1px solid #000;
 }
 .section-introduce .pic-list ul li {
@@ -149,4 +149,18 @@
   -o-object-fit: cover;
      object-fit: cover;
   filter: grayscale(1);
+}
+.section-introduce .bottom-moving {
+  margin-top: 80px;
+}
+.section-introduce .bottom-moving .moving-item {
+  float: left;
+  border: 1px solid #f00;
+  overflow: hidden;
+}
+.section-introduce .bottom-moving .moving-item span {
+  margin-right: 20px;
+}
+.section-introduce .bottom-moving .moving-item i {
+  margin-right: 20px;
 }/*# sourceMappingURL=style.css.map */
