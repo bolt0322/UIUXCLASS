@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.container h1 {
+  font-weight: normal;
+  margin-bottom: 60px;
+}
+
+.items {
+  position: relative;
+  border: 1px solid #f00;
+  /* position: absolute; */
+}
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(0);
+  display: none;
+  text-align: center;
+  padding: 40px;
+}
+.content:nth-child(2) {
+  transform: translateX(-100%);
+}
+.content:nth-child(3) {
+  transform: translateX(-200%);
+}
+.content img {
+  width: 100px;
+  height: auto;
+  border-radius: 100%;
+}
+.content .info {
+  margin: 20px 0;
+}
+.content .name {
+  font-weight: bold;
+}
+.content .job span {
+  color: sandybrown;
+}
+
+.buttons {
+  color: #ccc;
+}
+.buttons input {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  border: none;
+  background: #ddd;
+}
+
+.buttons input:nth-child(1) {
+  cursor: pointer;
+}
+.buttons input:nth-child(1):checked ~ .items .content:nth-child(1),
+.buttons input:nth-child(2):checked ~ .items .content:nth-child(2),
+.buttons input:nth-child(3):checked ~ .items .content:nth-child(3) {
+  display: block;
+}
