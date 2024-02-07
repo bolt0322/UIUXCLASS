@@ -1,17 +1,4 @@
-/* Variables*/
-$color: (
-  main-cream: #f5f2ef,
-  main-pink: #deccc8,
-  main-black: #323232,
-  main-khaki: #aeb5b4,
-);
-$font-size: (
-  head-small: 15px,
-  head-large: 30px,
-  page-top: 50px,
-);
-
-@import url("./reset.css");
+/* import */
 @font-face {
   font-family: "Rebecca";
   src: url("./font/EF_Rebecca.ttf");
@@ -24,6 +11,9 @@ $font-size: (
   font-family: "NanumR";
   src: url("./font/NanumSquareR.ttf");
 }
+
+@import "reset";
+@import "variables";
 
 /* common */
 .wrap {
@@ -54,9 +44,11 @@ $font-size: (
       transform: translate(-50%, -50%);
       i {
         font-size: map-get($font-size, head-large);
+        color: map-get($color, main-black);
       }
       span {
         font: normal 30px/1 "Rebecca";
+        color: map-get($color, main-black);
         margin-left: 10px;
       }
     }
@@ -65,6 +57,9 @@ $font-size: (
       top: 50%;
       left: 10px;
       transform: translateY(-50%);
+      a {
+        color: map-get($color, main-black);
+      }
     }
     .nav_right {
       position: absolute;
@@ -77,6 +72,9 @@ $font-size: (
         margin-left: 50px;
         &:first-child {
           margin-left: 0;
+        }
+        a {
+          color: map-get($color, main-black);
         }
       }
     }
@@ -103,7 +101,7 @@ $font-size: (
     .main-banner {
       display: inline-block;
       text-align: center;
-      font: normal 270px/1 "Rebecca";
+      font: normal calc(100vw * (270 / 1919)) / 1 "Rebecca";
       color: map-get($color, main-black);
     }
     .main-text {
@@ -117,13 +115,13 @@ $font-size: (
   }
 }
 
-/* section-introduce */
-// .section-introduce {
+/* section-travel */
+// .section-travel {
 //   width: 100%;
 //   height: 100vh;
 //   padding: 100px 0;
 //   background: map-get($color, main-khaki);
-//   .introduce-top {
+//   .travel-top {
 //     text-align: center;
 //     span {
 //       font: normal 100px/1 "Rebecca";
@@ -151,12 +149,13 @@ $font-size: (
 //   }
 // }
 
-.section-introduce {
+/* section-travel */
+.section-travel {
   width: 100%;
   height: 100vh;
   padding: 100px 0;
   background: map-get($color, main-khaki);
-  .introduce-top {
+  .travel-top {
     text-align: center;
     span {
       font: normal 6.5em/1 "Rebecca";
@@ -207,6 +206,28 @@ $font-size: (
       i {
         margin-right: 20px;
       }
+    }
+  }
+}
+
+/* https://baronissisportsclub.webflow.io/ */
+.section-movie {
+  width: 100%;
+  height: 100vh;
+  background: #49575e;
+  .movie-back {
+    height: 80vh;
+
+    font-family: map-get($font-family, main);
+    font-size: 180px;
+    color: map-get($color, main-cream);
+    border: 1px solid #0f0;
+    .back-top {
+      border: 1px solid #f00;
+    }
+    .back-middle {
+    }
+    .back-bottom {
     }
   }
 }

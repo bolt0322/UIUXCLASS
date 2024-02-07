@@ -1,5 +1,4 @@
-/* Variables*/
-@import url("./reset.css");
+/* import */
 @font-face {
   font-family: "Rebecca";
   src: url("./font/EF_Rebecca.ttf");
@@ -12,6 +11,21 @@
   font-family: "NanumR";
   src: url("./font/NanumSquareR.ttf");
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* common */
 .wrap {
   width: 100%;
@@ -44,9 +58,11 @@
 }
 .header .header_inner .header_contents i {
   font-size: 30px;
+  color: #323232;
 }
 .header .header_inner .header_contents span {
   font: normal 30px/1 "Rebecca";
+  color: #323232;
   margin-left: 10px;
 }
 .header .header_inner .nav_left {
@@ -54,6 +70,9 @@
   top: 50%;
   left: 10px;
   transform: translateY(-50%);
+}
+.header .header_inner .nav_left a {
+  color: #323232;
 }
 .header .header_inner .nav_right {
   position: absolute;
@@ -68,6 +87,9 @@
 }
 .header .header_inner .nav_right li:first-child {
   margin-left: 0;
+}
+.header .header_inner .nav_right li a {
+  color: #323232;
 }
 
 /* page-content */
@@ -91,7 +113,7 @@
 .section-main .main-container .main-banner {
   display: inline-block;
   text-align: center;
-  font: normal 270px/1 "Rebecca";
+  font: normal 14.0698280354vw/1 "Rebecca";
   color: #323232;
 }
 .section-main .main-container .main-text {
@@ -103,30 +125,31 @@
   padding-left: 100px;
 }
 
-/* section-introduce */
-.section-introduce {
+/* section-travel */
+/* section-travel */
+.section-travel {
   width: 100%;
   height: 100vh;
   padding: 100px 0;
   background: #aeb5b4;
 }
-.section-introduce .introduce-top {
+.section-travel .travel-top {
   text-align: center;
 }
-.section-introduce .introduce-top span {
+.section-travel .travel-top span {
   font: normal 6.5em/1 "Rebecca";
   color: #323232;
   text-transform: uppercase;
 }
-.section-introduce .pic-list {
+.section-travel .pic-list {
   margin-top: 80px;
   overflow: hidden;
 }
-.section-introduce .pic-list ul {
+.section-travel .pic-list ul {
   float: left;
   border: 1px solid #000;
 }
-.section-introduce .pic-list ul li {
+.section-travel .pic-list ul li {
   width: 100%;
   display: flex;
   width: 12.5065138093vw;
@@ -137,30 +160,47 @@
   overflow: hidden;
   float: left;
 }
-.section-introduce .pic-list ul li:nth-child(odd) {
+.section-travel .pic-list ul li:nth-child(odd) {
   margin-top: 52px;
 }
-.section-introduce .pic-list ul li:first-child {
+.section-travel .pic-list ul li:first-child {
   margin-left: 0;
 }
-.section-introduce .pic-list ul li img {
+.section-travel .pic-list ul li img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   filter: grayscale(1);
 }
-.section-introduce .bottom-moving {
+.section-travel .bottom-moving {
   margin-top: 80px;
 }
-.section-introduce .bottom-moving .moving-item {
+.section-travel .bottom-moving .moving-item {
   float: left;
   border: 1px solid #f00;
   overflow: hidden;
 }
-.section-introduce .bottom-moving .moving-item span {
+.section-travel .bottom-moving .moving-item span {
   margin-right: 20px;
 }
-.section-introduce .bottom-moving .moving-item i {
+.section-travel .bottom-moving .moving-item i {
   margin-right: 20px;
+}
+
+/* https://baronissisportsclub.webflow.io/ */
+.section-movie {
+  width: 100%;
+  height: 100vh;
+  background: #49575e;
+}
+.section-movie .movie-back {
+  height: 80vh;
+  font-family: "Rebecca";
+  font-size: 180px;
+  color: #f5f2ef;
+  border: 1px solid #0f0;
+}
+.section-movie .movie-back .back-top {
+  border: 1px solid #f00;
 }/*# sourceMappingURL=style.css.map */
