@@ -1,0 +1,17 @@
+project_01  =>  퍼블리싱 강의 아코디언! 페이지. 누를 때마다 사진 바뀜 (+js)
+project_02  => Testimonial. 페이저 누를 때마다 옆으로 프로필 넘어감 (+input태그)
+project_03  =>  움직이는 빨간 배경화면에 메뉴 나타나게 (+js)
+project_04  =>  jQuery :  scrollTo
+project_05  =>  jQuery :  wow 
+project_06  =>  jQuery :  parallax
+
+<2024-02-07>
+object-fit : cover
+ => 상단에 header, figure라는 영상이 들어와야 하는 사이즈 정확하게 고정되어 있던 상황
+ => 영상이 끝나는 지점 이후에 text 형식의 info 들어와야 하는 상황
+
+jQuery 플러그인
+ 1. scrollTo
+ 2. fullpage  :  스크롤이 스무스하게 내려가는 플러그인
+ 3. parallax  :  
+ 4. wow  :  애니메이션이 기다리고 있다가 스크롤해서 그 페이지에 도착하면 애니메이션 시작 / jquery는 아님.
