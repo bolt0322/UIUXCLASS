@@ -29,22 +29,31 @@ body {
   width: inherit;
   height: inherit;
 }
+<<<<<<< HEAD
 .container .contents .contents_inner {
   width: 2400px;
 }
 .container .contents .contents_inner .item {
   float: left;
+=======
+.container .contents .contents_inner .items {
+>>>>>>> 578baca2b42c741493ad2e3c651d69ef9927ac3c
   width: 800px;
   height: 400px;
   text-align: center;
   padding: 10px;
   border: 1px solid #00f;
 }
+<<<<<<< HEAD
 .container .contents .contents_inner .item img {
+=======
+.container .contents .contents_inner .items img {
+>>>>>>> 578baca2b42c741493ad2e3c651d69ef9927ac3c
   width: 150px;
   height: 150px;
   border-radius: 50%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+<<<<<<< HEAD
 }
 .container .contents .contents_inner .item .item_name {
   margin: 15px 0;
@@ -61,4 +70,6 @@ body {
 }
 .container .contents .contents_inner .item:nth-child(4) i {
   color: #5353f5;
+=======
+>>>>>>> 578baca2b42c741493ad2e3c651d69ef9927ac3c
 }/*# sourceMappingURL=style.css.map */

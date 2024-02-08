@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Oxygen:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  body {
+    font-family: "Oxygen", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #ddd;
+  }
+
+  .shopping {
+    width: 300px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    &:hover .info {
+        bottom: 0;
+    }
+    img {
+        width: inherit;
+    }
+    .info {
+        background: #fff;
+        width: inherit;
+        padding: 10px;
+        position: absolute;
+        bottom: -175px;
+        left: 0;
+        transition: all 0.5s;
+        .price {
+            overflow: hidden;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+            .price-inner {
+                display: inline-block;
+                float: left;
+                h3 {
+                    font: normal 20px/1.5 "Oxygen";
+                }
+                p {
+                    color: #706f6f;
+                    font-size: 14px;
+                }
+            }
+            .sale {
+                float: right;
+                margin-top: 24px;
+                background: #ea1e47;
+                color: #fff;
+                font-size: 12px;
+                padding: 5px 10px;
+            }
+        }
+        .option {
+            margin-top: 15px;
+            .color {
+                margin-bottom: 10px;
+                label {
+                    display: block;
+                    margin-bottom: 3px;
+                }
+                div {
+                    display: inline-block;
+                    width: 15px;
+                    height: 15px;
+                    border-radius: 100%;
+                    cursor: pointer;
+                    &:nth-of-type(1) {
+                        background: orange;
+                    }
+                    &:nth-of-type(2) {
+                        background: pink;
+                    }
+                    &:nth-of-type(3) {
+                        background: black;
+                    }
+                }
+            }
+            .size {
+                margin-bottom: 15px;
+                label {
+                    display: block;
+                    margin-bottom: 3px;
+                }
+                div {
+                    display: inline-block;
+                    font-size: 13px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .button {
+            border: none;
+            width: 100%;
+            padding: 7px 0;
+            background: #000;
+            color: #fff;
+            border-radius: 2px;
+            transition: all 0.4s;
+            cursor: pointer;
+            &:hover {
+                border: 1px solid #828282;
+                background: #fff;
+                color: #828282;
+            }
+        }
+    }
+  }

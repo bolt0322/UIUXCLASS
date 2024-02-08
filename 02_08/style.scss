@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap");
 
 * {
@@ -65,3 +66,52 @@ body {
     }
   }
 }
+=======
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* common */
+  body {
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #eee;
+  }
+
+  .container {
+    width: 800px;
+    height: 500px;
+    border: 1px solid #f00;
+    h1 {
+        text-align: center;
+        font: normal 40px/1 "Raleway";
+        padding: 5px 0;
+    }
+    .contents {
+        width: inherit;
+        height: inherit;
+        .contents_inner {
+            .items {
+                width: 800px;
+                height: 400px;
+                text-align: center;
+                padding: 10px;
+                border: 1px solid #00f;
+                img {
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+                }
+            }
+        }
+    }
+  }
+>>>>>>> 578baca2b42c741493ad2e3c651d69ef9927ac3c
