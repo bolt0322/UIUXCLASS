@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* import */
 @font-face {
   font-family: "Rebecca";
@@ -30,17 +31,19 @@ a {
 .wrap {
   width: 100%;
   height: 8000px;
+  font-family: "Rebecca";
 }
 
 /* header */
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 500;
+  z-index: 9999;
   width: 100%;
-  height: 90px;
+  height: 80px;
   background: #f5f2ef;
   border-bottom: 1px solid #323232;
+  transition: height 0.3s ease;
 }
 .header .header_inner {
   font: bold 15px/1 "NanumL";
@@ -125,40 +128,48 @@ a {
   padding-left: 100px;
 }
 
-/* section-travel */
+/* section-introduce */
+.section-introduce {
+  width: 100%;
+  height: 100vh;
+  background-color: #f5f2ef;
+}
+
 /* section-travel */
 .section-travel {
   width: 100%;
   height: 100vh;
-  padding: 100px 0;
+  padding: 50px 0;
   background: #aeb5b4;
 }
 .section-travel .travel-top {
   text-align: center;
 }
 .section-travel .travel-top span {
-  font: normal 6.5em/1 "Rebecca";
+  font: normal 5em/1 "Rebecca";
   color: #323232;
   text-transform: uppercase;
 }
 .section-travel .pic-list {
-  margin-top: 80px;
+  margin-top: 50px;
+  width: 100%;
   overflow: hidden;
 }
 .section-travel .pic-list ul {
-  float: left;
-  border: 1px solid #000;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 40px;
+  animation: pic_slide 25s linear infinite;
 }
 .section-travel .pic-list ul li {
-  width: 100%;
-  display: flex;
+  flex: 0 0 auto;
   width: 12.5065138093vw;
   height: 22.3032829599vw;
   border-radius: 12.5065138093vw;
   margin: 0 1.0422094841vw;
   position: relative;
   overflow: hidden;
-  float: left;
 }
 .section-travel .pic-list ul li:nth-child(odd) {
   margin-top: 52px;
@@ -174,33 +185,72 @@ a {
   filter: grayscale(1);
 }
 .section-travel .bottom-moving {
-  margin-top: 80px;
-}
-.section-travel .bottom-moving .moving-item {
-  float: left;
-  border: 1px solid #f00;
+  margin-top: 70px;
+  color: #323232;
+  width: 100%;
   overflow: hidden;
 }
-.section-travel .bottom-moving .moving-item span {
-  margin-right: 20px;
+.section-travel .bottom-moving .moving-inner {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  animation: text_slide 25s linear infinite;
 }
-.section-travel .bottom-moving .moving-item i {
-  margin-right: 20px;
+.section-travel .bottom-moving .moving-inner .moving-item {
+  white-space: nowrap;
+  padding-right: 30px;
+}
+.section-travel .bottom-moving .moving-inner .moving-item span {
+  padding-right: 30px;
 }
 
+@keyframes pic_slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%); /*이미지 8개*/
+  }
+}
+@keyframes text_slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%); /*텍스트 너비만큼 오른쪽으로*/
+  }
+}
 /* https://baronissisportsclub.webflow.io/ */
 .section-movie {
-  width: 100%;
-  height: 100vh;
+  position: relative;
+  height: 7000px;
   background: #49575e;
 }
-.section-movie .movie-back {
-  height: 80vh;
-  font-family: "Rebecca";
-  font-size: 180px;
-  color: #f5f2ef;
-  border: 1px solid #0f0;
+.section-movie .movie-bg {
+  color: #aeb5b4;
+  font-size: 11.9854090672vw;
+  position: sticky;
+  top: 0;
+  z-index: 1; /*다른 요소 위에 레이어 놓기*/
 }
-.section-movie .movie-back .back-top {
+.section-movie .movie-pic {
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto; /* 내용이 넘칠 경우 스크롤이 나타나도록 설정 */
+}
+.section-movie .movie-pic .pic-wrapper {
   border: 1px solid #f00;
+  width: 100%;
+  height: 5000px; /*스크롤이 생기지 않게*/
+  z-index: 2;
+  position: relative;
+}
+.section-movie .movie-pic .pic-wrapper .movie-img {
+  margin: 40px 0;
+}
+.section-movie .movie-pic .pic-wrapper .movie-img img {
+  width: 300px;
+}
+.section-movie .movie-pic .pic-wrapper .img1 {
+  padding-left: 4rem;
 }/*# sourceMappingURL=style.css.map */

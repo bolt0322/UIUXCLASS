@@ -9,7 +9,8 @@
     ></script>
     <!-- custom css & js -->
     <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js"></script>
+    <script defer src="./script.js"></script>
+    <script defer src="./scroll.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -19,7 +20,7 @@
         <div class="header_inner">
           <ul class="nav_left">
             <li>
-              <a href="#">HOME</a>
+              <a class="home-link" href="#">HOME</a>
             </li>
           </ul>
           <div class="header_contents">
@@ -29,13 +30,13 @@
           </div>
           <ul class="nav_right">
             <li>
-              <a href="#">INTRODUCE</a>
+              <a class="introduce-link" href="#">INTRODUCE</a>
             </li>
             <li>
-              <a href="#">TRAVEL</a>
+              <a class="travel-link" href="#">TRAVEL</a>
             </li>
             <li>
-              <a href="#">MOVIE</a>
+              <a class="movie-link" href="#">MOVIE</a>
             </li>
           </ul>
         </div>
@@ -53,6 +54,7 @@
             </div>
           </div>
         </section>
+        <section class="section-introduce"></section>
         <section class="section-travel">
           <div class="travel-top">
             <span>Travel</span>
@@ -65,51 +67,107 @@
               <li><img src="./img/hs_01.jpg" alt="img_04" /></li>
               <li><img src="./img/hs_02.jpg" alt="img_05" /></li>
               <li><img src="./img/jn_01.jpg" alt="img_06" /></li>
+              <li><img src="./img/hs_03.jpg" alt="img_07" /></li>
+              <li><img src="./img/hs_04.jpg" alt="img_08" /></li>
+              <li><img src="./img/hs_04.jpg" alt="img_08" /></li>
+              <li><img src="./img/hs_04.jpg" alt="img_08" /></li>
+              <li><img src="./img/hs_04.jpg" alt="img_08" /></li>
+              <li><img src="./img/hs_04.jpg" alt="img_08" /></li>
             </ul>
           </div>
           <div class="bottom-moving">
-            <div class="moving-item">
-              <span>MY TRAVEL JOURNAL</span>
-              <i class="fa-solid fa-plane-up"></i>
-            </div>
-            <div class="moving-item">
-              <span>MY TRAVEL JOURNAL</span>
-              <i class="fa-solid fa-plane-up"></i>
-            </div>
-            <div class="moving-item">
-              <span>MY TRAVEL JOURNAL</span>
-              <i class="fa-solid fa-plane-up"></i>
-            </div>
-            <div class="moving-item">
-              <span>MY TRAVEL JOURNAL</span>
-              <i class="fa-solid fa-plane-up"></i>
-            </div>
-            <div class="moving-item">
-              <span>MY TRAVEL JOURNAL</span>
-              <i class="fa-solid fa-plane-up"></i>
-            </div>
-            <div class="moving-item">
-              <span>MY TRAVEL JOURNAL</span>
-              <i class="fa-solid fa-plane-up"></i>
-            </div>
-            <div class="moving-item">
-              <span>MY TRAVEL JOURNAL</span>
-              <i class="fa-solid fa-plane-up"></i>
-            </div>
-            <div class="moving-item">
-              <span>MY TRAVEL JOURNAL</span>
-              <i class="fa-solid fa-plane-up"></i>
+            <div class="moving-inner">
+              <div class="moving-item">
+                <span>MY TRAVEL JOURNAL</span>
+                <i class="fa-solid fa-plane-up"></i>
+              </div>
+              <div class="moving-item">
+                <span>MY TRAVEL JOURNAL</span>
+                <i class="fa-solid fa-plane-up"></i>
+              </div>
+              <div class="moving-item">
+                <span>MY TRAVEL JOURNAL</span>
+                <i class="fa-solid fa-plane-up"></i>
+              </div>
+              <div class="moving-item">
+                <span>MY TRAVEL JOURNAL</span>
+                <i class="fa-solid fa-plane-up"></i>
+              </div>
+              <div class="moving-item">
+                <span>MY TRAVEL JOURNAL</span>
+                <i class="fa-solid fa-plane-up"></i>
+              </div>
+              <div class="moving-item">
+                <span>MY TRAVEL JOURNAL</span>
+                <i class="fa-solid fa-plane-up"></i>
+              </div>
+              <div class="moving-item">
+                <span>MY TRAVEL JOURNAL</span>
+                <i class="fa-solid fa-plane-up"></i>
+              </div>
+              <div class="moving-item">
+                <span>MY TRAVEL JOURNAL</span>
+                <i class="fa-solid fa-plane-up"></i>
+              </div>
+              <div class="moving-item">
+                <span>MY TRAVEL JOURNAL</span>
+                <i class="fa-solid fa-plane-up"></i>
+              </div>
+              <div class="moving-item">
+                <span>MY TRAVEL JOURNAL</span>
+                <i class="fa-solid fa-plane-up"></i>
+              </div>
+              <div class="moving-item">
+                <span>MY TRAVEL JOURNAL</span>
+                <i class="fa-solid fa-plane-up"></i>
+              </div>
+              <div class="moving-item">
+                <span>MY TRAVEL JOURNAL</span>
+                <i class="fa-solid fa-plane-up"></i>
+              </div>
+              <div class="moving-item">
+                <span>MY TRAVEL JOURNAL</span>
+                <i class="fa-solid fa-plane-up"></i>
+              </div>
+              <div class="moving-item">
+                <span>MY TRAVEL JOURNAL</span>
+                <i class="fa-solid fa-plane-up"></i>
+              </div>
+              <div class="moving-item">
+                <span>MY TRAVEL JOURNAL</span>
+                <i class="fa-solid fa-plane-up"></i>
+              </div>
+              <div class="moving-item">
+                <span>MY TRAVEL JOURNAL</span>
+                <i class="fa-solid fa-plane-up"></i>
+              </div>
+              <div class="moving-item">
+                <span>MY TRAVEL JOURNAL</span>
+                <i class="fa-solid fa-plane-up"></i>
+              </div>
             </div>
           </div>
         </section>
         <section class="section-movie">
-          <div class="movie-back">
+          <div class="movie-bg">
             <p class="back-top">3 MOVIES</p>
             <p class="back-middle">THAT</p>
             <p class="back-bottom">I LIKE</p>
           </div>
+          <div class="movie-pic">
+            <div class="pic-wrapper">
+              <div class="movie-img img1">
+                <img src="./img/m_hui.jpg" alt="img01" />
+              </div>
+              <div class="movie-img img2">
+                <img src="./img/m_pu.jpg" alt="img02" />
+              </div>
+              <div class="movie-img img3">
+                <img src="./img/m_rui.jpg" alt="img03" />
+              </div>
+            </div>
+          </div>
         </section>
-        <section class="section-introduce"></section>
       </div>
     </div>
   </body>
