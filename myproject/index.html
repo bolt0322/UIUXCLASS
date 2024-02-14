@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./style.css" />
     <script defer src="./script.js"></script>
     <script defer src="./scroll.js"></script>
+    <script defer src="./movie-scroll.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -42,20 +43,26 @@
         </div>
       </header>
       <div class="page-content">
-        <section class="section-main">
+        <section id="main" class="pg-section">
           <div class="main-container">
-            <div class="main-container">
-              <div class="main-banner">WHO AM I ?</div>
-              <p class="main-text">
-                This page is for introducing myself.<br />
-                I'm dreaming of being a good ui/ux designer.<br />
-                I'm taking a step toward my dream.
-              </p>
+            <div class="main-banner">WHO AM I ?</div>
+            <p class="main-text">
+              This page is for introducing myself.<br />
+              I'm dreaming of being a good ui/ux designer.<br />
+              I'm taking a step toward my dream.
+            </p>
+          </div>
+        </section>
+        <section id="introduce" class="pg-section">
+          <div class="introduce-inner">
+            <div class="intro-wrap">
+              <div class="intro-inner experience"></div>
+              <div class="intro-inner vision"></div>
+              <div class="intro-inner favorite"></div>
             </div>
           </div>
         </section>
-        <section class="section-introduce"></section>
-        <section class="section-travel">
+        <section id="travel" class="pg-section">
           <div class="travel-top">
             <span>Travel</span>
           </div>
@@ -145,25 +152,96 @@
                 <span>MY TRAVEL JOURNAL</span>
                 <i class="fa-solid fa-plane-up"></i>
               </div>
+              <div class="moving-item">
+                <span>MY TRAVEL JOURNAL</span>
+                <i class="fa-solid fa-plane-up"></i>
+              </div>
+              <div class="moving-item">
+                <span>MY TRAVEL JOURNAL</span>
+                <i class="fa-solid fa-plane-up"></i>
+              </div>
             </div>
           </div>
         </section>
-        <section class="section-movie">
-          <div class="movie-bg">
-            <p class="back-top">3 MOVIES</p>
-            <p class="back-middle">THAT</p>
-            <p class="back-bottom">I LIKE</p>
+        <section id="movie">
+          <div class="bg-text">
+            <div class="movie-bg">
+              <p class="back-top">MOVIES</p>
+              <p class="back-middle">THAT</p>
+              <p class="back-bottom">I LIKE</p>
+            </div>
           </div>
           <div class="movie-pic">
-            <div class="pic-wrapper">
-              <div class="movie-img img1">
-                <img src="./img/m_hui.jpg" alt="img01" />
+            <div class="movie-wrapper">
+              <div class="movie-inner img1">
+                <div class="movie-info-wrap">
+                  <img src="./img/movie_01.jpg" alt="movie01" />
+                  <div class="movie-info">
+                    <p>감독 : 스티븐 스필버그</p>
+                    <p>장르 : SF, 드라마, 사이버펑크</p>
+                    <p>출연 : 헤일리 조엘 오스먼트, 주드 로</p>
+                  </div>
+                </div>
               </div>
-              <div class="movie-img img2">
-                <img src="./img/m_pu.jpg" alt="img02" />
+              <div class="movie-inner img2">
+                <div class="movie-info-wrap">
+                  <img src="./img/movie_02.jpg" alt="movie02" />
+                  <div class="movie-info">
+                    <p>감독 : 스티븐 스필버그</p>
+                    <p>장르 : SF, 드라마, 사이버펑크</p>
+                    <p>출연 : 헤일리 조엘 오스먼트, 주드 로</p>
+                  </div>
+                </div>
               </div>
-              <div class="movie-img img3">
-                <img src="./img/m_rui.jpg" alt="img03" />
+              <div class="movie-inner img3">
+                <div class="movie-info-wrap">
+                  <img src="./img/movie_03.jpg" alt="movie03" />
+                  <div class="movie-info">
+                    <p>감독 : 스티븐 스필버그</p>
+                    <p>장르 : SF, 드라마, 사이버펑크</p>
+                    <p>출연 : 헤일리 조엘 오스먼트, 주드 로</p>
+                  </div>
+                </div>
+              </div>
+              <div class="movie-inner img4">
+                <div class="movie-info-wrap">
+                  <img src="./img/movie_04.jpg" alt="movie04" />
+                  <div class="movie-info">
+                    <p>감독 : 스티븐 스필버그</p>
+                    <p>장르 : SF, 드라마, 사이버펑크</p>
+                    <p>출연 : 헤일리 조엘 오스먼트, 주드 로</p>
+                  </div>
+                </div>
+              </div>
+              <div class="movie-inner img5">
+                <div class="movie-info-wrap">
+                  <img src="./img/movie_05.jpg" alt="movie05" />
+                  <div class="movie-info">
+                    <p>감독 : 스티븐 스필버그</p>
+                    <p>장르 : SF, 드라마, 사이버펑크</p>
+                    <p>출연 : 헤일리 조엘 오스먼트, 주드 로</p>
+                  </div>
+                </div>
+              </div>
+              <div class="movie-inner img6">
+                <div class="movie-info-wrap">
+                  <img src="./img/movie_06.jpg" alt="movie06" />
+                  <div class="movie-info">
+                    <p>감독 : 스티븐 스필버그</p>
+                    <p>장르 : SF, 드라마, 사이버펑크</p>
+                    <p>출연 : 헤일리 조엘 오스먼트, 주드 로</p>
+                  </div>
+                </div>
+              </div>
+              <div class="movie-inner img7">
+                <div class="movie-info-wrap">
+                  <img src="./img/movie_07.jpg" alt="movie07" />
+                  <div class="movie-info">
+                    <p>감독 : 스티븐 스필버그</p>
+                    <p>장르 : SF, 드라마, 사이버펑크</p>
+                    <p>출연 : 헤일리 조엘 오스먼트, 주드 로</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

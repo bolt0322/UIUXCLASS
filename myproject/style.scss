@@ -21,6 +21,10 @@
   height: 8000px;
   font-family: map-get($font-family, main);
 }
+.pg-section {
+  width: 100%;
+  height: 100vh;
+}
 
 /* header */
 .header {
@@ -82,21 +86,23 @@
     }
   }
 }
+@keyframes nav {
+  0% {
+  }
+}
 
 /* page-content */
 .page-content {
   width: inherit;
-  height: inherit;
+  height: auto;
 }
 
 /* section-main */
-.section-main {
+#main {
   padding-top: 100px;
-  width: 100%;
-  height: 100vh;
   background: map-get($color, main-pink);
   .main-container {
-    margin-top: 50px;
+    margin-top: 170px;
     display: flex;
     flex-direction: column;
     .main-banner {
@@ -107,26 +113,36 @@
     }
     .main-text {
       display: inline-block;
-      font: bold 30px/1.5 "NanumL";
+      font: bold 2rem/1.5 "NanumL";
       text-transform: uppercase;
       color: map-get($color, main-black);
       margin-top: 20px;
-      padding-left: 100px;
+      padding-left: calc(100vw * (160 / 1919));
     }
   }
 }
 
 /* section-introduce */
-.section-introduce {
-  width: 100%;
-  height: 100vh;
-  background-color: map-get($color, main-cream);
+#introduce {
+  background-color: map-get($color, main-black);
+  .introduce-inner {
+    border: 1px solid #0f0;
+    .intro-wrap {
+      border: 1px solid #f00;
+      display: flex;
+      justify-content: space-around;
+      .intro-inner {
+        width: 400px;
+        height: 500px;
+        border: 1px solid map-get($color, main-cream);
+        border-radius: 10px;
+      }
+    }
+  }
 }
 
 /* section-travel */
-.section-travel {
-  width: 100%;
-  height: 100vh;
+#travel {
   padding: 50px 0;
   background: map-get($color, main-khaki);
   .travel-top {
@@ -180,7 +196,7 @@
       display: flex;
       flex-wrap: nowrap;
       justify-content: center;
-      animation: text_slide 25s linear infinite;
+      animation: text_slide 30s linear infinite;
       .moving-item {
         white-space: nowrap;
         padding-right: 30px;
@@ -209,41 +225,97 @@
 }
 
 /* https://baronissisportsclub.webflow.io/ */
-.section-movie {
+#movie {
   position: relative;
-  height: 7000px;
-  background: #49575e;
-  .movie-bg {
-    color: map-get($color, main-khaki);
-    font-size: calc(100vw * (230 / 1919));
+  // height: 7000px;
+  height: auto;
+  min-height: 100vh;
+  background: #354247;
+  .bg-text {
+    color: #d3d3d3;
     position: sticky;
     top: 0;
     z-index: 1; /*다른 요소 위에 레이어 놓기*/
-    .back-top {
-    }
-    .back-middle {
-    }
-    .back-bottom {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .movie-bg {
+      .back-top {
+        font-size: calc(100vw * (290 / 1919));
+      }
+      .back-middle {
+        font-size: calc(100vw * (180 / 1919));
+        margin: calc(100vw * (50 / 1919)) 0;
+        text-align: end;
+      }
+      .back-bottom {
+        font-size: calc(100vw * (220 / 1919));
+        text-align: center;
+      }
     }
   }
   .movie-pic {
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
     overflow-y: auto; /* 내용이 넘칠 경우 스크롤이 나타나도록 설정 */
-    .pic-wrapper {
-      border: 1px solid #f00;
-      width: 100%;
-      height: 5000px; /*스크롤이 생기지 않게*/
-      z-index: 2;
+    .movie-wrapper {
       position: relative;
-      .movie-img {
-        margin: 40px 0;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      padding: 20px 0;
+      box-sizing: border-box;
+      .movie-inner {
+        margin: 20px 0;
+        .movie-info-wrap {
+          display: inline-block;
+        }
         img {
           width: 300px;
+          height: auto;
+          border-radius: 10px;
+          filter: grayscale(0.5);
+        }
+        .movie-info {
+          display: inline-block;
+          p {
+            color: map-get($color, main-cream);
+            font-weight: lighter;
+            font-size: 1rem;
+            line-height: 1.7;
+            &:nth-child(1) {
+              font-size: 1.5rem;
+            }
+          }
         }
       }
       .img1 {
-        padding-left: 4rem;
+        padding-left: calc(100vw * (180 / 1919));
+      }
+      .img2 {
+        display: flex;
+        justify-content: end;
+        padding-right: calc(100vw * (50 / 1919));
+      }
+      .img3 {
+        padding-left: calc(100vw * (300 / 1919));
+      }
+      .img4 {
+        display: flex;
+        justify-content: end;
+        padding-right: calc(100vw * (300 / 1919));
+      }
+      .img5 {
+        padding-left: calc(100vw * (140 / 1919));
+      }
+      .img6 {
+        display: flex;
+        justify-content: end;
+        padding-right: calc(100vw * (100 / 1919));
+      }
+      .img7 {
+        padding-left: calc(100vw * (250 / 1919));
       }
     }
   }

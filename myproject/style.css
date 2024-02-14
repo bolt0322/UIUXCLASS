@@ -34,6 +34,11 @@ a {
   font-family: "Rebecca";
 }
 
+.pg-section {
+  width: 100%;
+  height: 100vh;
+}
+
 /* header */
 .header {
   position: fixed;
@@ -95,74 +100,83 @@ a {
   color: #323232;
 }
 
+@keyframes nav {}
 /* page-content */
 .page-content {
   width: inherit;
-  height: inherit;
+  height: auto;
 }
 
 /* section-main */
-.section-main {
+#main {
   padding-top: 100px;
-  width: 100%;
-  height: 100vh;
   background: #deccc8;
 }
-.section-main .main-container {
-  margin-top: 50px;
+#main .main-container {
+  margin-top: 170px;
   display: flex;
   flex-direction: column;
 }
-.section-main .main-container .main-banner {
+#main .main-container .main-banner {
   display: inline-block;
   text-align: center;
   font: normal 14.0698280354vw/1 "Rebecca";
   color: #323232;
 }
-.section-main .main-container .main-text {
+#main .main-container .main-text {
   display: inline-block;
-  font: bold 30px/1.5 "NanumL";
+  font: bold 2rem/1.5 "NanumL";
   text-transform: uppercase;
   color: #323232;
   margin-top: 20px;
-  padding-left: 100px;
+  padding-left: 8.3376758729vw;
 }
 
 /* section-introduce */
-.section-introduce {
-  width: 100%;
-  height: 100vh;
-  background-color: #f5f2ef;
+#introduce {
+  background-color: #323232;
+}
+#introduce .introduce-inner {
+  border: 1px solid #0f0;
+}
+#introduce .introduce-inner .intro-wrap {
+  border: 1px solid #f00;
+  display: flex;
+  justify-content: space-around;
+}
+#introduce .introduce-inner .intro-wrap .intro-inner {
+  width: 400px;
+  height: 500px;
+  border: 1px solid #f5f2ef;
+  border-radius: 10px;
 }
 
 /* section-travel */
-.section-travel {
-  width: 100%;
-  height: 100vh;
+#travel {
   padding: 50px 0;
   background: #aeb5b4;
 }
-.section-travel .travel-top {
+#travel .travel-top {
   text-align: center;
 }
-.section-travel .travel-top span {
+#travel .travel-top span {
   font: normal 5em/1 "Rebecca";
   color: #323232;
   text-transform: uppercase;
 }
-.section-travel .pic-list {
+#travel .pic-list {
   margin-top: 50px;
   width: 100%;
   overflow: hidden;
 }
-.section-travel .pic-list ul {
+#travel .pic-list ul {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
   gap: 40px;
   animation: pic_slide 25s linear infinite;
 }
-.section-travel .pic-list ul li {
+#travel .pic-list ul li {
   flex: 0 0 auto;
   width: 12.5065138093vw;
   height: 22.3032829599vw;
@@ -171,36 +185,36 @@ a {
   position: relative;
   overflow: hidden;
 }
-.section-travel .pic-list ul li:nth-child(odd) {
+#travel .pic-list ul li:nth-child(odd) {
   margin-top: 52px;
 }
-.section-travel .pic-list ul li:first-child {
+#travel .pic-list ul li:first-child {
   margin-left: 0;
 }
-.section-travel .pic-list ul li img {
+#travel .pic-list ul li img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   filter: grayscale(1);
 }
-.section-travel .bottom-moving {
+#travel .bottom-moving {
   margin-top: 70px;
   color: #323232;
   width: 100%;
   overflow: hidden;
 }
-.section-travel .bottom-moving .moving-inner {
+#travel .bottom-moving .moving-inner {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
-  animation: text_slide 25s linear infinite;
+  animation: text_slide 30s linear infinite;
 }
-.section-travel .bottom-moving .moving-inner .moving-item {
+#travel .bottom-moving .moving-inner .moving-item {
   white-space: nowrap;
   padding-right: 30px;
 }
-.section-travel .bottom-moving .moving-inner .moving-item span {
+#travel .bottom-moving .moving-inner .moving-item span {
   padding-right: 30px;
 }
 
@@ -221,36 +235,94 @@ a {
   }
 }
 /* https://baronissisportsclub.webflow.io/ */
-.section-movie {
+#movie {
   position: relative;
-  height: 7000px;
-  background: #49575e;
+  height: auto;
+  min-height: 100vh;
+  background: #354247;
 }
-.section-movie .movie-bg {
-  color: #aeb5b4;
-  font-size: 11.9854090672vw;
+#movie .bg-text {
+  color: #d3d3d3;
   position: sticky;
   top: 0;
   z-index: 1; /*다른 요소 위에 레이어 놓기*/
-}
-.section-movie .movie-pic {
-  width: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#movie .bg-text .movie-bg .back-top {
+  font-size: 15.1120375195vw;
+}
+#movie .bg-text .movie-bg .back-middle {
+  font-size: 9.379885357vw;
+  margin: 2.6055237103vw 0;
+  text-align: end;
+}
+#movie .bg-text .movie-bg .back-bottom {
+  font-size: 11.4643043252vw;
+  text-align: center;
+}
+#movie .movie-pic {
+  width: 100%;
   overflow-y: auto; /* 내용이 넘칠 경우 스크롤이 나타나도록 설정 */
 }
-.section-movie .movie-pic .pic-wrapper {
-  border: 1px solid #f00;
-  width: 100%;
-  height: 5000px; /*스크롤이 생기지 않게*/
-  z-index: 2;
+#movie .movie-pic .movie-wrapper {
   position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  box-sizing: border-box;
 }
-.section-movie .movie-pic .pic-wrapper .movie-img {
-  margin: 40px 0;
+#movie .movie-pic .movie-wrapper .movie-inner {
+  margin: 20px 0;
 }
-.section-movie .movie-pic .pic-wrapper .movie-img img {
+#movie .movie-pic .movie-wrapper .movie-inner .movie-info-wrap {
+  display: inline-block;
+}
+#movie .movie-pic .movie-wrapper .movie-inner img {
   width: 300px;
+  height: auto;
+  border-radius: 10px;
+  filter: grayscale(0.5);
 }
-.section-movie .movie-pic .pic-wrapper .img1 {
-  padding-left: 4rem;
+#movie .movie-pic .movie-wrapper .movie-inner .movie-info {
+  display: inline-block;
+}
+#movie .movie-pic .movie-wrapper .movie-inner .movie-info p {
+  color: #f5f2ef;
+  font-weight: lighter;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+#movie .movie-pic .movie-wrapper .movie-inner .movie-info p:nth-child(1) {
+  font-size: 1.5rem;
+}
+#movie .movie-pic .movie-wrapper .img1 {
+  padding-left: 9.379885357vw;
+}
+#movie .movie-pic .movie-wrapper .img2 {
+  display: flex;
+  justify-content: end;
+  padding-right: 2.6055237103vw;
+}
+#movie .movie-pic .movie-wrapper .img3 {
+  padding-left: 15.6331422616vw;
+}
+#movie .movie-pic .movie-wrapper .img4 {
+  display: flex;
+  justify-content: end;
+  padding-right: 15.6331422616vw;
+}
+#movie .movie-pic .movie-wrapper .img5 {
+  padding-left: 7.2954663887vw;
+}
+#movie .movie-pic .movie-wrapper .img6 {
+  display: flex;
+  justify-content: end;
+  padding-right: 5.2110474205vw;
+}
+#movie .movie-pic .movie-wrapper .img7 {
+  padding-left: 13.0276185513vw;
 }/*# sourceMappingURL=style.css.map */
