@@ -1,0 +1,35 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  width: 100%;
+}
+header {
+  width: 100%;
+  height: 80px;
+  background: #fafaf5ff;
+}
+.page1 {
+  width: 100%;
+  height: 100vh;
+  background: gray;
+}
+.page2 {
+  width: 100%;
+  height: 100vh;
+  background: lightcoral;
+}
+.page3 {
+  width: 100%;
+  height: 100vh;
+  background: lightseagreen;
+}
