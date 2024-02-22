@@ -9,14 +9,69 @@ li {
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 .wrapper {
   width: 100%;
 }
+
+/*header*/
 header {
+  border-bottom: 1px solid #ffb6c1;
   width: 100%;
   height: 80px;
   background: #fafaf5ff;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 80px;
+  background: lightpink;
+  transition: height 0.3s ease;
+  .header_inner {
+    font: bold 15px/1 "NanumL";
+    color: #000;
+    width: 86%;
+    height: inherit;
+    margin: 0 auto;
+    position: relative;
+    .header_contents {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      span {
+        font: normal 20px/1 "Rebecca";
+        margin-left: 10px;
+      }
+    }
+    .nav_left {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      .home-link {
+        font-size: 10px;
+      }
+    }
+    .nav_right {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      overflow: hidden;
+      li {
+        float: left;
+        margin-left: 10px;
+        &:first-child {
+          margin-left: 0;
+        }
+        a {
+          font-size: 10px;
+        }
+      }
+    }
+  }
 }
 .page1 {
   width: 100%;
@@ -33,3 +88,5 @@ header {
   height: 100vh;
   background: lightseagreen;
 }
+
+/* header */

@@ -11,16 +11,70 @@ li {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 .wrapper {
   width: 100%;
 }
 
+/*header*/
 header {
+  border-bottom: 1px solid #ffb6c1;
   width: 100%;
   height: 80px;
   background: #fafaf5;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 80px;
+  background: lightpink;
+  transition: height 0.3s ease;
+}
+header .header_inner {
+  font: bold 15px/1 "NanumL";
+  color: #000;
+  width: 86%;
+  height: inherit;
+  margin: 0 auto;
+  position: relative;
+}
+header .header_inner .header_contents {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header .header_inner .header_contents span {
+  font: normal 20px/1 "Rebecca";
+  margin-left: 10px;
+}
+header .header_inner .nav_left {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+header .header_inner .nav_left .home-link {
+  font-size: 10px;
+}
+header .header_inner .nav_right {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+header .header_inner .nav_right li {
+  float: left;
+  margin-left: 10px;
+}
+header .header_inner .nav_right li:first-child {
+  margin-left: 0;
+}
+header .header_inner .nav_right li a {
+  font-size: 10px;
 }
 
 .page1 {
@@ -39,4 +93,6 @@ header {
   width: 100%;
   height: 100vh;
   background: lightseagreen;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* header *//*# sourceMappingURL=style.css.map */
