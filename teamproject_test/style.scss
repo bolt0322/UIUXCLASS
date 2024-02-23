@@ -17,20 +17,18 @@ a {
 
 /*header*/
 header {
-  border-bottom: 1px solid #ffb6c1;
   width: 100%;
   height: 80px;
-  background: #fafaf5ff;
+  background: transparent;
   position: fixed;
   top: 0;
   z-index: 9999;
   width: 100%;
   height: 80px;
-  background: lightpink;
   transition: height 0.3s ease;
   .header_inner {
     font: bold 15px/1 "NanumL";
-    color: #000;
+    color: #fff;
     width: 86%;
     height: inherit;
     margin: 0 auto;
@@ -76,12 +74,12 @@ header {
 .page1 {
   width: 100%;
   height: 100vh;
-  background: gray;
+  background: url("./image/main-pic.jpg");
 }
 .page2 {
   width: 100%;
   height: 100vh;
-  background: lightcoral;
+  background: #fafaf5;
 }
 .page3 {
   width: 100%;
